@@ -10,7 +10,7 @@ from config import DIETA_SCHEMA, SYSTEM_INSTRUCTION
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
-MODELO_GEMINI = "gemini-2.5-flash"
+MODELO_GEMINI = "gemini-3.1-flash-lite"
 
 app = Flask(__name__)
 
