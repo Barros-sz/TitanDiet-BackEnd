@@ -15,7 +15,7 @@ MODELO_GEMINI = "gemini-2.5-flash"
 app = Flask(__name__)
 
 CORS(app, resources={r"/*": {
-    "origins": ["*"],
+    "origins": ["https://titan-diet-front-end.vercel.app"],
     "methods": ["POST", "GET", "OPTIONS"],
     "allow_headers": ["Content-Type"]
 }})
